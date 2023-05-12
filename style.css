@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+:root {
+
+    /* main text color  */
+    /* --text-color: #575d75; */
+    --text-color: #BDBDBD;
+
+
+    /* important text color  */
+    --important-color: #f04f3c;
+
+    /* main background color  */
+    /* --light-bg: #f5f6ff; */
+    --bg: #171C30;
+
+
+    /* default text color  */
+    --not-impo: #575d75;
+
+    --border-bot: #c3c4c7;
+}
+
+i:hover{
+    color: var(--text-color) !important;
+}
+
+p{
+    color: var(--text-color) !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.swichtheme{
+    --bg: #f5f6ff !important;
+    --text-color: #575d75 !important;
+    --not-impo: var(--border-bot) !important;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--bg) !important;
+}
+
+h1 {
+    color: var(--important-color) !important;
+    cursor: pointer;
+}
+
+h2{
+    color: var(--text-color) !important;
+    cursor: pointer;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+h2:hover{
+    color: var(--important-color) !important;
+
+}
+
+
+header {
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--not-impo);
+}
+
+.togglebtn{
+    background: none;
+    border: none !important;
+    cursor: pointer;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    outline: none;
+    overflow: hidden;
+
+}
+.togglebtn i{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+}
+
+.togglebtn i:hover{
+    color: var(--important-color) !important;
+}
+
+.hd__txt a {
+    text-decoration: none !important;
+    color: var(--text-color);
+}
+
+.hd__txt a:hover {
+    color: var(--important-color);
+}
+
+#carousel-ctx img {
+    margin-left: 1rem;
+    width: 30rem!important;
+    height: 28rem!important;
+}
+
+
+#carousel-ctx .car-child {
+    width: 100%;
+    height: 40rem;
+}
+
+#carousel-ctx .car-child img {
+    width: 100%;
+    border-radius: 5px;
+}
